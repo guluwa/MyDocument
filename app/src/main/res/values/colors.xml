@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="orange">#ECBE7B</color>
+    <color name="cyan">#009688</color>
+    <color name="gray">#E6E6E6</color>
+    <color name="gray_deep">#C8C8C8</color>
+    <color name="edit_text_indicator_color">#edebeb</color>
+    <color name="act_login_btn_text_color">#EAB185</color>
+</resources>

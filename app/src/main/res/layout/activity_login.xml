@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".ui.login.LoginActivity">
+
+        <android.support.constraint.Guideline
+            android:id="@+id/mGuidelineBackTop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.046" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/mGuidelineBackStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.029" />
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:src="@drawable/ic_back_black"
+            android:visibility="invisible"
+            app:layout_constraintStart_toStartOf="@+id/mGuidelineBackStart"
+            app:layout_constraintTop_toTopOf="@+id/mGuidelineBackTop"
+            app:layout_constraintWidth_percent="0.096" />
+
+        <TextView
+            android:id="@+id/tvToolBarTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:text="登录"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/ivBack"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/ivBack"
+            app:layout_constraintWidth_percent="0.45" />
+
+        <TextView
+            android:id="@+id/tvRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="注册"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/tvToolBarTitle"
+            app:layout_constraintEnd_toEndOf="@+id/mGuideLineEditRight"
+            app:layout_constraintTop_toTopOf="@+id/tvToolBarTitle" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/mGuidelineImageTop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.11" />
+
+        <ImageView
+            android:id="@+id/ivAppLogo"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mGuidelineImageTop"
+            app:layout_constraintWidth_percent="0.23" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/mGuideLineInviteCodeTop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.32" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/mGuideLineEditLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.072" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/mGuideLineEditRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.928" />
+
+        <ImageView
+            android:id="@+id/ivAccount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_account"
+            app:layout_constraintBottom_toBottomOf="@+id/etAccount"
+            app:layout_constraintStart_toStartOf="@+id/mGuideLineEditLeft"
+            app:layout_constraintTop_toTopOf="@+id/etAccount"
+            app:layout_constraintWidth_percent="0.06" />
+
+        <EditText
+            android:id="@+id/etAccount"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="10dp"
+            android:background="@null"
+            android:hint="请输入用户名"
+            android:inputType="text"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray_deep"
+            android:textSize="15sp"
+            app:layout_constraintDimensionRatio="1:0.1"
+            app:layout_constraintEnd_toEndOf="@+id/mGuideLineEditRight"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toEndOf="@+id/ivAccount"
+            app:layout_constraintTop_toTopOf="@+id/mGuideLineInviteCodeTop" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/edit_text_indicator_color"
+            app:layout_constraintEnd_toEndOf="@+id/mGuideLineEditRight"
+            app:layout_constraintStart_toStartOf="@+id/mGuideLineEditLeft"
+            app:layout_constraintTop_toBottomOf="@+id/etAccount" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/mGuideLinePasswordTop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.4" />
+
+        <ImageView
+            android:id="@+id/ivPassword"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_password"
+            app:layout_constraintBottom_toBottomOf="@+id/etPassword"
+            app:layout_constraintStart_toStartOf="@+id/mGuideLineEditLeft"
+            app:layout_constraintTop_toTopOf="@+id/etPassword"
+            app:layout_constraintWidth_percent="0.06" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="10dp"
+            android:background="@null"
+            android:hint="请输入密码"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray_deep"
+            android:textSize="15sp"
+            app:layout_constraintDimensionRatio="1:0.1"
+            app:layout_constraintEnd_toEndOf="@+id/mGuideLineEditRight"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toEndOf="@+id/ivPassword"
+            app:layout_constraintTop_toTopOf="@+id/mGuideLinePasswordTop" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/edit_text_indicator_color"
+            app:layout_constraintEnd_toEndOf="@+id/mGuideLineEditRight"
+            app:layout_constraintStart_toStartOf="@+id/mGuideLineEditLeft"
+            app:layout_constraintTop_toBottomOf="@+id/etPassword" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/mGuideLineBtnTop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.52" />
+
+        <TextView
+            android:id="@+id/tvLogin"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/act_register_btn_bg"
+            android:gravity="center"
+            android:text="登录"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintDimensionRatio="1:0.15"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/mGuideLineBtnTop"
+            app:layout_constraintWidth_percent="0.78" />
+    </android.support.constraint.ConstraintLayout>
+</layout>

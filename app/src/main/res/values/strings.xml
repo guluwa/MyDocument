@@ -1,0 +1,20 @@
+<resources>
+    <string name="application_id">com.guluwa.mydocument</string>
+    <string name="app_name">我的文档</string>
+    <string name="notifyTitle">提示</string>
+    <string name="notifyMsg">亲，应用缺少必要权限，将无法正常运行。\n\n请点击\"设置\"-\"权限\"-打开所需权限。</string>
+    <string name="setting">设置</string>
+    <string name="cancel">取消</string>
+    <string name="layout_params">android.view.MiuiWindowManager$LayoutParams</string>
+
+    <string name="network_error">网络请求超时, 请检查网络状态!</string>
+    <string name="data_format_error">数据格式错误!</string>
+    <string name="user_data_error">用户数据错误, 请重新登陆！</string>
+    <string name="data_error">数据错误!</string>
+    <string name="network_request_error">网络请求错误!</string>
+    <string name="user_info_over_time_error">用户信息过期, 请再试一次!</string>
+    <string name="other_error">其他错误</string>
+
+    <string name="please_wait">请稍候</string>
+    <string name="data_wrong">数据错误!</string>
+</resources>
